@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+    list-style: none;
+    margin: 40px 0 5px;
+    padding: 25px 0 5px;
+    text-align: center;
+    /*background: white;*/
+}
+            .menu-main li {display: inline-block;}
+            .menu-main li:after {
+                content: "|";
+                color: #606060;
+                display: inline-block;
+                vertical-align:top;
+            }
+            .menu-main li:last-child:after {content: none;}
+            .menu-main a {
+                text-decoration: none;
+                font-family: 'Ubuntu Condensed', sans-serif;
+                letter-spacing: 2px;
+                position: relative;
+                padding-bottom: 20px;
+                margin: 0 34px 0 30px;
+                font-size: 20px;
+                text-transform: uppercase;
+                display: inline-block;
+                transition: color .2s;
+            }
+            .menu-main a, .menu-main a:visited {color: #f6f2f6;}
+            .menu-main a.current, .menu-main a:hover{color: black;}
+            .menu-main a:before,
+            .menu-main a:after {
+                content: "";
+                position: absolute;
+                height: 4px;
+                top: auto;
+                right: 50%;
+                bottom: -5px;
+                left: 50%;
+                background: #8f1f92;
+                transition: .8s;
+            }
+            .menu-main a:hover:before, .menu-main .current:before {left: 0;}
+            .menu-main a:hover:after, .menu-main .current:after {right: 0;}
+            @media (max-width: 550px) {
+                .menu-main {padding-top: 0;}
+                .menu-main li {display: block;}
+                .menu-main li:after {content: none;}
+                .menu-main a {
+                    padding: 25px 0 20px;
+                    margin: 0 30px;
+                }
+            }
+
+
+body{
+    background-color: #ed7ded;
+}
+
+.name{
+    width: 300px;
+    margin-top: -135px;
+    padding-left: 20px
+}
+        h1{
+            font-size: 50px;
+            color: #fcffa9;
+            text-align: center;
+            text-decoration:  underline #635555; /* Параметры линии под текстом */
+            font-weight: normal; /* Убираем жирное начертание */
+        }
+
+.label{
+    width: 100px;
+    margin-left: 1100px;
+    margin-top: -200px;
+}
+        h2{
+            font-size: 90px;
+            font-family: "Monotype Corsiva";
+        }
+
+
+.img1{
+    width: 400px;
+    height: 300px;
+    transform: rotate(20deg);
+    margin-top: 50px;
+    padding-left: 50px;
+}
+    .img2{
+    width: 400px;
+    height: 250px;
+    margin-top: 50px;
+}
+        .img3{
+            width: 400px;
+            height: 250px;
+            margin-top: 50px;
+            transform: rotate(-20deg);
+        }
+            .img4{
+                padding-left: 20px;
+                width: 400px;
+                height: 250px;
+                transform: rotate(-10deg);
+                    }
+                    .img5{
+                        width: 400px;
+                        height: 250px;
+                        transform: rotate(20deg);
+                    }
+                        .img6{
+                            width: 400px;
+                            height: 250px;
+                            transform: rotate(10deg);
+                        }

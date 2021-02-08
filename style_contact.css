@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
 .menu-main {
     list-style: none;
     margin: 40px 0 5px;
@@ -60,7 +61,7 @@ body{
 
 .name{
     width: 300px;
-    margin-top: -135px;
+    margin-top: -100px;
     padding-left: 20px
 }
 h1{
@@ -74,9 +75,152 @@ h1{
 .label{
     width: 100px;
     margin-left: 1100px;
-    margin-top: -200px;
+    margin-top: -80px;
 }
 h2{
     font-size: 90px;
     font-family: "Monotype Corsiva";
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+            .wrapper {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 550px;
+                padding: 30px;
+            }
+
+            .wrapper ul {
+                list-style: none;
+                padding-right: 30px;
+            }
+
+            .wrapper ul li {
+                width: 65px;
+                height: 65px;
+                margin: 0 15px;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 50%;
+                border: 5px solid #fff;
+                float: left;
+                position: relative;
+                transition: all 0.5s ease;
+
+            }
+
+            .wrapper ul li .fa {
+                color: #fff;
+                line-height: 65px;
+                font-size: 30px;
+                transition: all 0.5s ease;
+            }
+
+
+            /* For creating the text below the icons, I'm going to use the before pseudo element.*/
+            ul li.facebook:before{
+                content: "facebook";
+            }
+
+
+            ul li.instagram:before{
+                content: "instagram";
+            }
+
+
+            ul li.whatsapp:before{
+                content: "whatsapp";
+            }
+
+            ul li:before{
+                content: "";
+                position: absolute;
+                bottom: -35px;
+                left: -5px;
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: capitalize;
+                transition: all 0.5s ease;
+            }
+
+            /*facebook*/
+            .wrapper ul li:hover.facebook {
+                border: 5px solid #3b5998;
+                box-shadow: 0 0 15px #3b5998;
+                transition: all 0.5s ease;
+            }
+
+            .wrapper ul li:hover .fa-facebook {
+                color: #3b5998;
+                text-shadow: 0 0 15px #3b5998;
+                transition: all 0.5s ease;
+            }
+
+            .wrapper ul li.facebook:hover:before{
+                color: #3b5998;
+                text-shadow: 0 0 15px #3b5998;
+            }
+
+            /* instagram */
+            .wrapper ul li:hover.instagram {
+                border: 5px solid #bc2a8d;
+                box-shadow: 0 0 15px #bc2a8d;
+                transition: all 0.5s ease;
+            }
+
+            .wrapper ul li:hover .fa-instagram {
+                color: #bc2a8d;
+                text-shadow: 0 0 15px #bc2a8d;
+                transition: all 0.5s ease;
+            }
+
+            .wrapper ul li.instagram:hover:before{
+                color: #bc2a8d;
+                text-shadow: 0 0 15px #bc2a8d;
+            }
+
+
+
+            /* whatsapp */
+            .wrapper ul li:hover.whatsapp {
+                border: 5px solid #4dc247;
+                box-shadow: 0 0 15px #4dc247;
+                transition: all 0.5s ease;
+            }
+
+            .wrapper ul li:hover .fa-whatsapp {
+                color: #4dc247;
+                text-shadow: 0 0 15px #4dc247;
+                transition: all 0.5s ease;
+            }
+
+            .wrapper ul li.whatsapp:hover:before{
+                color: #4dc247;
+                text-shadow: 0 0 15px #4dc247;
+            }
+
+            /* media queries */
+            @media screen and (max-width: 680px){
+                .wrapper {
+                    width: 150px;
+                }
+                .wrapper ul li{
+                    margin-bottom: 45px;
+                }
+            }
